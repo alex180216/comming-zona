@@ -105,3 +105,139 @@
       margin-left: 30%;
       filter: drop-shadow(0 2px 5px #030303cc );
   }
+
+  /*==========NOSOTROS==========*/
+
+.navbar {
+  height: auto;
+  background-color: #420f3a;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  padding: 5px 30px;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar > .enlace{
+  grid-column: 3/4;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-family: 'Oswald', sans-serif;
+  color: #fec051;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar > .enlace:hover{
+  color: #da3611;
+}
+
+.bg{
+  width: 100%;
+  background-image: url("../img/back-nosotros.png");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mascara{
+  background-color: rgba(240, 248, 255, 0.568);
+  display: grid;
+  grid-template-columns: minamx(300px, 1000px);
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 150px;
+}
+.mascara > h2{
+  font-size: 30px;
+  font-weight: 800;
+  color: #420f3a;
+  padding-bottom: 20px;
+}
+.mascara > p{
+  font-size: 20px;
+  font-weight: 800;
+  color: #420f3a;
+  padding-bottom: 60px;
+}
+.mascara > .info{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 300px) );
+  justify-content: center;
+  gap: 30px;
+}
+.mascara > .info > .imagen{
+  border-radius: 100%;
+  border: 3px solid #da3611;
+  padding: 30px;
+  filter: drop-shadow(0 2px 5px #030303cc );
+}
+.mascara > .info > .imagen > img{
+  width: 200px;
+  padding: 20px;
+}
+.mascara > .socios-clientes{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+  gap: 80px;
+  justify-content: center;
+  margin-top: 50px;
+  color: #420f3a;
+  font-family: 'Montserrat', sans-serif ;
+}
+.mascara > .socios-clientes > .socios > img{
+  width: 200px;
+  border-radius: 100%;
+  border: 3px solid #da3611;
+  padding: 30px;
+  filter: drop-shadow(0 2px 5px #030303cc );
+}
+.mascara > .socios-clientes > .socios > h5{
+  margin-top: 30px;
+  border: 2px solid #da3611;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 800;
+}
+.mascara > .info-zona{
+  margin-top: 80px;
+  color: #420f3a;
+}
+.mascara > .info-zona > h3{
+  border: 2px solid #da3611;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 800
+}
+.mascara > .info-zona > img{
+  width: 500px;
+}
+
+
+footer{
+  background-color: #fec051;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer > div{
+  color: #420f3a;
+  font-family: 'Oswald', sans-serif;
+}
+footer > div > a{
+  font-weight: 800;
+  font-size: 20px;
+  color: #420f3a;
+}
+footer > div > a:hover{
+  color: #da3611;
+}
