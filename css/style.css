@@ -112,7 +112,7 @@
   height: auto;
   background-color: #420f3a;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 20% 60% 20%;
   padding: 5px 30px;
   justify-content: center;
   position: fixed;
@@ -151,7 +151,7 @@
 .mascara{
   background-color: rgba(240, 248, 255, 0.568);
   display: grid;
-  grid-template-columns: minamx(300px, 1000px);
+  grid-template-columns: minamx(250px, 1000px);
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -171,23 +171,23 @@
 }
 .mascara > .info{
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 300px) );
+  grid-template-columns: repeat(3, minmax(50px, 300px) );
   justify-content: center;
   gap: 30px;
 }
 .mascara > .info > .imagen{
   border-radius: 100%;
   border: 3px solid #da3611;
-  padding: 30px;
+  padding:5px;
   filter: drop-shadow(0 2px 5px #030303cc );
 }
 .mascara > .info > .imagen > img{
-  width: 200px;
-  padding: 20px;
+  width: 100%;
+  padding: 8px;
 }
 .mascara > .socios-clientes{
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 400px));
+  grid-template-columns: minmax(300px, 400px);
   gap: 80px;
   justify-content: center;
   margin-top: 50px;
@@ -195,11 +195,15 @@
   font-family: 'Montserrat', sans-serif ;
 }
 .mascara > .socios-clientes > .socios > img{
-  width: 200px;
+  width: 150px;
   border-radius: 100%;
   border: 3px solid #da3611;
   padding: 30px;
   filter: drop-shadow(0 2px 5px #030303cc );
+}
+.mascara > .socios-clientes > .socios > h4{
+  font-weight: 600;
+  border-bottom: 2px solid #420f3a;
 }
 .mascara > .socios-clientes > .socios > h5{
   margin-top: 30px;
@@ -219,7 +223,7 @@
   font-weight: 800
 }
 .mascara > .info-zona > img{
-  width: 500px;
+  width: 250px;
 }
 
 
@@ -240,4 +244,50 @@ footer > div > a{
 }
 footer > div > a:hover{
   color: #da3611;
+}
+
+@media only screen and (min-width: 882px) {
+  .navbar {
+    grid-template-columns: 10% 80% 10%;
+  }
+  .mascara > .info{
+    grid-template-columns: repeat(3, minmax(250px, 300px) );
+    gap: 30px;
+  }
+  .mascara > p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .mascara > .info > .imagen{
+    padding: 30px;
+  }
+  
+  .mascara > .info > .imagen > img{
+    width: 200px;
+    padding: 20px;
+  }
+  .mascara > .socios-clientes{
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    gap: 80px;
+    margin-top: 50px;
+  }
+  .mascara > .info-zona > img{
+    width: 500px;
+    
+  }
+  .mascara > .socios-clientes > .socios > img{
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mascara{
+    padding-top: 200px;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .mascara{
+    padding-top: 300px;
+  }
 }
