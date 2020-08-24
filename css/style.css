@@ -64,6 +64,7 @@
   }
 
   #mascara > img{
+    display: none;
         width: 90%;
         height: 100vh;
         opacity:0.94;
@@ -245,8 +246,15 @@ footer > div > a{
 footer > div > a:hover{
   color: #da3611;
 }
-
+@media only screen and (min-width: 680px) {
+  #mascara > img {
+    width: 400px;
+    display: block;
+}
 @media only screen and (min-width: 882px) {
+  #mascara > img {
+    width: 85%;
+  }
   .navbar {
     grid-template-columns: 10% 80% 10%;
   }
