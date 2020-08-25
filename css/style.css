@@ -82,35 +82,55 @@
     opacity: 0.9;
   }
   #mascara-responsive2 > img{
-    height: 180px;
+    height: 150px;
     width: 100%;
   }
 
   .aviso{
-      position: absolute;
-      top: 40px;
-      z-index: 1001;
-      
-      margin-left: 5%;
-      color: white;
-      text-align: center;
-      font-weight: 800;
-      filter: drop-shadow(0 2px 5px #fec051 );
+    display: none;
+  }
+  .aviso-responsive{
+    position: absolute;
+    z-index: 1010;
+    top:50px;
+    right: 0;
+    left: 0;
+    color:white;
+    font-weight: 800px;
+    text-align: center;
+    filter: drop-shadow(0 2px 5px #fec051 );
+  }
+  #enlace-nosotros{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1010;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #fec051;
+  }
+  #enlace-nosotros > a{
+    font-size: 30px;
+    color: white;
   }
   #frases{
+      padding-top: 200px;
       display: grid;
       grid-template-columns: minmax(300px, 1000px);
-      padding-top: 150px;
-      padding-left: 200px;
+      
   }
   #frases > .frase > h1{
-      font-size: 45px;
-      margin-left: 20%;
+    font-size: 30px;
       filter: drop-shadow(0 2px 5px #fec051 );
+      text-align: center;
   }
   .logo > img{
-      width: 50%;
-      margin-left: 30%;
+      width: 70%;
+      margin-bottom: 200px;
+      margin-right: auto;
+      margin-left: auto;
       filter: drop-shadow(0 2px 5px #030303cc );
   }
 
@@ -254,7 +274,20 @@ footer > div > a:hover{
   color: #da3611;
 }
 @media only screen and (min-width: 650px) {
-  
+  .aviso{
+    position: absolute;
+    top: 40px;
+    z-index: 1001;
+    display: block;
+    margin-left: 5%;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    filter: drop-shadow(0 2px 5px #fec051 );
+  }
+  .aviso-responsive{
+    display: none;
+  }
   #mascara > img{
     display: block;
     width: 400px;
@@ -283,6 +316,23 @@ footer > div > a:hover{
     /* color: #420f3a; */
     color: aliceblue;
     text-shadow: 2px 2px 2px #fec051;
+  }
+  #enlace-nosotros{
+    display: none;
+  }
+  #frases{
+    padding-top: 150px;
+    padding-left: 200px;
+  }
+  #frases > .frase > h1{
+    font-size: 45px;
+    margin-left: 20%;
+    text-align: start;
+  }
+  .logo > img{
+    width: 50%;
+    margin-left: 30%;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 770px) {
