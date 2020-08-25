@@ -45,40 +45,47 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
   #navbar{
-      margin-top: 30px;
-      margin-right: 7%;
-      /* display: grid;
-      grid-template-columns: repeat(3, 1fr); */
-      /* text-align: center; */
-      text-align: right;
-  }
-  #navbar > a{
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    padding: 5px;
-    font-size: 20px;
-    /* color: #420f3a; */
-    color: aliceblue;
-    text-shadow: 2px 2px 2px #fec051;
+    display: none;
   }
 
-  #mascara > img{
-    display: none;
-        width: 90%;
-        height: 100vh;
-        opacity:0.94;
-        filter:alpha(opacity=40);
-        filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.7));
-  }
   #carousel-example-2{
       position: relative;
+  }
+  #mascara > img{
+    display: none;
   }
   #mascara{
       position: absolute;
       top: 0;
       z-index: 1000;
   }
+  #mascara-responsive1{
+    position: absolute;
+    z-index: 900;
+    top:0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+  }
+  #mascara-responsive1 > img{
+    height: 180px;
+    width: 100%;
+  }
+  #mascara-responsive2{
+    position: absolute;
+    z-index: 900;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.9;
+  }
+  #mascara-responsive2 > img{
+    height: 180px;
+    width: 100%;
+  }
+
   .aviso{
       position: absolute;
       top: 40px;
@@ -246,15 +253,60 @@ footer > div > a{
 footer > div > a:hover{
   color: #da3611;
 }
-@media only screen and (min-width: 680px) {
-  #mascara > img {
-    width: 400px;
+@media only screen and (min-width: 650px) {
+  
+  #mascara > img{
     display: block;
+    width: 400px;
+    height: 100vh;
+    opacity:0.94;
+    filter:alpha(opacity=40);
+    filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.7));
+  }
+  #mascara-responsive1, #mascara-responsive2{
+    display: none;
+  }
+  #navbar{
+    display: block;
+    margin-top: 30px;
+    margin-right: 7%;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* text-align: center; */
+    text-align: right;
+  }
+  #navbar > a{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: 20px;
+    /* color: #420f3a; */
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #fec051;
+  }
+}
+@media only screen and (min-width: 770px) {
+  
+  #mascara > img{
+    width: 90%;
+    height: 100vh;
+    opacity:0.94;
+    filter:alpha(opacity=40);
+    filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.7));
+  }
+  .aviso{
+    position: absolute;
+    top: 40px;
+    z-index: 1001;
+    
+    margin-left: 5%;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    filter: drop-shadow(0 2px 5px #fec051 );
+  }
 }
 @media only screen and (min-width: 882px) {
-  #mascara > img {
-    width: 85%;
-  }
   .navbar {
     grid-template-columns: 10% 80% 10%;
   }
