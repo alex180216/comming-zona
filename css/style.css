@@ -77,7 +77,7 @@
     width: 100%;
   }
   #mascara-responsive2{
-    position: absolute;
+    position: fixed;
     z-index: 900;
     bottom: 0;
     left: 0;
